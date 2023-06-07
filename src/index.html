@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="sketch.js"></script>
+    <title>Perfect Form</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfect Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="/dist/output.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
     <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   
   <body>
-    <div>
-        <h1>perfect form</h1>
-        <p id='status'>Loading model...</p>
-        <script src="sketch.js"></script>
+    <div class="holder">
+        <h1 class="text-3xl font-bold underline flex justify-center">
+            Perfect Form
+        </h1>
+        <p id='status' class="flex justify-center">Loading model...</p>
+        <div id="canvasHolder">
+
+        </div>
     </div>
   </body>
+  <script src="sketch.js"></script>
 </html>

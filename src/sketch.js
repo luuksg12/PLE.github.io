@@ -13,7 +13,8 @@ let poseNet;
 let poses = [];
 
 function setup() {
-  createCanvas(640, 480);
+  var myCanvas = createCanvas(640, 480);
+  myCanvas.parent("canvasHolder");
   video = createCapture(VIDEO);
   video.size(width, height);
 
@@ -51,7 +52,7 @@ function drawKeypoints()  {
       let keypoint = pose.keypoints[j];
       // Only draw an ellipse is the pose probability is bigger than 0.2
       if (keypoint.score > 0.2) {
-        fill(255, 0, 0);
+        fill(255, 100, 100);
         noStroke();
         ellipse(keypoint.position.x, keypoint.position.y, 10, 10);
       }
